@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-const VideoContent = () => {
-  return <h2>Video Content</h2>;
+import styles from './video-content.css';
+
+const propTypes = {
+  children: PropTypes.element,
 };
 
-export default VideoContent;
+export default class VideoContent extends React.Component {
+  render() {
+    return (
+      <div className={styles.container}>
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
+VideoContent.propTypes = propTypes;

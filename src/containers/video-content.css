@@ -1,13 +1,13 @@
 .container {
   display: flex;
-  width: 25%;
+  width: 75%;
   height: 100%;
 
   flex-direction: column;
-  background-color: rgb(77, 76, 101);
+  background-color: rgba(0,0,0,.95);
 
   background-size: cover;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }

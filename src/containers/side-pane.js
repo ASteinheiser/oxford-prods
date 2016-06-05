@@ -3,14 +3,15 @@ import React, { PropTypes } from 'react';
 import styles from './side-pane.css'
 
 const propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.element,
 };
 
 export default class SidePane extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
-        <h1>Side pane</h1>
+      <div>
+        <div className={styles.container}>
+        </div>
         {this.props.children}
       </div>
     );
